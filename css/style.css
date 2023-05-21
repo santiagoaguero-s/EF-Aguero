@@ -1,0 +1,53 @@
+
+/*header*/
+.logo-pelota{
+    width: 100px;
+    border-radius: 50px;
+}
+.formulario{
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+    left: 1400px;
+}
+
+/*footer*/
+header{
+border: solid 10px coral;
+}
+
+.items-footer{
+    display: flex;
+    list-style: none;
+    width: 50px;    
+    align-items: center;
+    
+}
+.fb-footer{
+    width: 70px;
+    height: 50px;
+}
+.ig-footer{
+    width: 70px;
+    height: 50px;
+}
+.tw-footer{
+    width: 70px;
+    height: 50px;
+
+}
+.icono-footer{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    
+}
+
+.slide{
+    margin-top: 50px;
+    width: 560px;
+}
+body{
+    flex-wrap: ;
+}
