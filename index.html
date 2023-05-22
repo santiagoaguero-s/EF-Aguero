@@ -6,16 +6,21 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css"> 
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
  <body>
+<div id="grilla">
 
     <!--header-->
 
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header> 
+      <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./Index.html"><img src="./images/pelota.png" alt="" class="logo-pelota"></a>
+          <a class="navbar-brand" href="./Index.html">
+            <img src="./images/pelota.png" alt="" class="logo-pelota">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,50 +29,66 @@
               <a class="nav-link active" aria-current="page" href="./pages/Competiciones.html">Competiciones</a>
               <a class="nav-link" href="./pages/Equipos.html">Equipos</a>
               <a class="nav-link" href="./pages/Partidos.html">Partidos</a>
-              <a href="./pages/Formulario.html" class="nav-link ms-auto"> <img class="formulario" src="./images/person.svg" alt="inicio de sesion"></a>
             </div>
+            <a href="./pages/Formulario.html" class="nav-link ms-auto">
+              <i class="bi bi-person-circle formulario"></i>
+            </a>
           </div>
         </div>
-      </nav>  
+      </nav>
+
     </header>
     
-    <main> 
-         <h1>Noticias</h1>
 
-         <section class="container-fluid d-flex align-items-center">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-y2uIjgjG_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                  <div class="carousel-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5RVNkOAAqp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                  <div class="carousel-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Znc6IKZSodc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                  <div class="carousel-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i0EVxwyclIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-         </section>
+     <!--asides-->
+      <aside id="izq"></aside>
+      <aside id="der"></aside>
 
-         <section>
+      <!--carousel de iframes-->
+
+      <main> 
+        <h1>Noticias</h1>
+
+        <section id="parte1">
+          <div class="container">
+            <div class="row">
+           <div id="carouselExampleFade" class="carousel slide carousel-fade col">
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <iframe width="745" height="420" src="https://www.youtube.com/embed/-y2uIjgjG_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                 </div>
+                 <div class="carousel-item">
+                   <iframe width="745" height="420" src="https://www.youtube.com/embed/5RVNkOAAqp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                 </div>
+                 <div class="carousel-item">
+                   <iframe width="745" height="420" src="https://www.youtube.com/embed/Znc6IKZSodc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                 </div>
+                 <div class="carousel-item">
+                   <iframe width="745" height="420" src="https://www.youtube.com/embed/i0EVxwyclIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                 </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+             <p class="col my-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iure magni distinctio ea odit aspernatur inventore doloribus. Beatae tenetur eius amet est ipsam non voluptas harum. Deserunt natus eveniet esse! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nihil dicta suscipit ipsum sunt cum quas vero obcaecati quia quidem expedita ipsam blanditiis, minus corrupti officiis explicabo nisi labore quis?</p>
+             </div>
+            </div>
+        </section>
+
+        <!--cards-->
+        <section id="parte2">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div class="col cards">
                   <div class="card h-100">
                     <img src="./images/arsenal-partido.webp" class="card-img-top" alt="arsenal vs n-forest">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Arsenal pierde la liga ante el Nottingham Forest</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                     <div class="card-footer">
@@ -75,11 +96,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col cards">
                   <div class="card h-100">
                     <img src="./images/manutd-partido.webp" class="card-img-top" alt="manchester vs bournemouth">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Increible gol de Casemiro para la victoria del Manchester United</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                     <div class="card-footer">
@@ -87,11 +108,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col cards">
                   <div class="card h-100">
                     <img src="./images/barca-partid.webp" class="card-img-top" alt="barca vs real sociedad">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Cae el Barca en el Clasico de la Coruña</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                     <div class="card-footer">
@@ -102,28 +123,41 @@
               </div>
          </section>
      </main>
+
+     <!--footer-->
+
+     <footer>
+        <nav>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="col pe-2">
+            <a href="https://www.instagram.com/" target="_blank"> <i class="bi bi-instagram iconos"></i>
+            </a>
+          </div>
+          <div class="col pe-2">
+            <a href="https://twitter.com/?lang=es" target="_blank"> <i class="bi bi-twitter iconos"></i>
+            </a>
+          </div>
+          <div class="col pe-2">
+            <a href="https://www.facebook.com/" target="blank"> <i class="bi bi-facebook iconos"></i>
+            </a>
+          </div>
+          <div class="col pe-2 ">
+            <a href=""> <img src="./images/pelota.png" alt="inicio" class="icono-footer">
+            </a>
+          </div>
+        </div>
+      </div>
+        </nav>
+      </footer>
+  
     
-    <!--pie de pagina-->    
-
-    <footer>
-      <nav>
-        <ul class="items-footer">
-          <li >
-            <a href="https://www.instagram.com/"> <img class="ig-footer" src="./images/instagram.svg" alt="instagram"></a>
-          </li>
-          <li >
-            <a href="https://twitter.com/?lang=es"> <img class="tw-footer" src="./images/twitter.svg" alt="twitter"></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/"> <img class="fb-footer" src="./images/facebook.svg" alt="facebook"></a>
-          </li>
-          <li ><a href="./Index.html"> <img class="icono-footer" src="./images/pelota.png" alt="inicio"></a></li>
-        </ul>
-      </nav>
-    </footer>
-
-
+      
     
+
+
+
+</div>
   
 
 
