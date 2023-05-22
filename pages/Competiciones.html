@@ -6,58 +6,159 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/Style.css"> 
+    <!--iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
   
   <body>
-  <!--header-->
+<div id="grilla-competiciones">
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../Index.html"><img src="../images/pelota.png" alt="" class="logo-pelota"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="../pages/Competiciones.html">Competiciones</a>
-            <a class="nav-link" href="../pages/Equipos.html">Equipos</a>
-            <a class="nav-link" href="../pages/Partidos.html">Partidos</a>
-            <a href="../pages/Formulario.html" class="nav-link"> <img class="formulario" src="../images/person.svg" alt="inicio de sesion"></a>
-          </div>
-        </div>
+ <!--header-->
+
+ <header> 
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Index.html">
+        <img src="../images/pelota.png" alt="" class="logo-pelota">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="./pages/Competiciones.html">Competiciones</a>
+          <a class="nav-link" href="./pages/Equipos.html">Equipos</a>
+          <a class="nav-link" href="./pages/Partidos.html">Partidos</a>
+        </div> 
+        <a href="./pages/Formulario.html" class="nav-link ms-auto">
+          <i class="bi bi-person-circle formulario"></i>
+        </a>
       </div>
-    </nav>
-
+    </div>
+  </nav>
 </header>
 
+<!--asides-->
+<aside id="der"></aside>
+<aside id="izq"></aside>
+
+<!--competiciones-->
+<main>
+  <h1>Competiciones</h1>
+  <div id="competiciones" >
+    <div class="container">
+      <div class="row mx-auto">
+        <ul>
+          <li class="col mt-4">
+            <a href="https://www.google.com/search?q=champions+league&oq=champions&aqs=chrome.1.69i57j69i59j69i60l2j69i61.3455j0j9&sourceid=chrome&ie=UTF-8#cobssid=s&sie=lg;/g/11mvmxlddg;2;/m/0c1q0;mt;fp;1;;;">
+           <div class="alinear d-flex align-items-center">
+            <div class="borde d d-flex">
+              <img src="../images/uefa-champions-league-logo.png" alt="Champions League" class="logo-champions"></div>
+            <p class="nombres-comp">Champions League</p>
+            </div>
+          </a>
+        </li>
+          <li class="col mt-4">
+            <a href="https://www.google.com/search?q=europa+league&sxsrf=APwXEddLWMZuPmUUtmMD8PFGohfXrPo2hA%3A1684774228221&ei=VJ1rZKeCDY7K1sQP8Iaj8AE&gs_ssp=eJzj4tTP1TcwzCgqKTBg9OJNLS3KL0hUyElNTC9NBQBs8gil&oq=europa&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgBMgwIIxCKBRAnEEYQ_QEyDQguENQCELEDEIoFEEMyDQguEIMBELEDEIoFEEMyDQguEIMBELEDEIoFEEMyDQguEIoFELEDENQCEEMyBwgAEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyCggAEIoFELEDEEMyGwguENQCELEDEIoFEEMQlwUQ3AQQ3gQQ4AQYAjoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoSCC4QigUQ1AIQyAMQsAMQQxgBOg8ILhCKBRDIAxCwAxBDGAE6BwgjEIoFECc6BwguEIoFEEM6CgguEIoFENQCEEM6CAgAEIAEELEDOggILhCABBCxAzoICC4QgAQQ1AI6EwguEIMBEMcBELEDENEDEIAEEAo6BwgAEIAEEAo6BQgAEIAEOgsILhCABBDHARCvAToKCC4QsQMQgAQQCjoWCC4QgAQQ1AIQlwUQ3AQQ3gQQ4AQYAjobCC4QigUQsQMQ1AIQQxCXBRDcBBDeBBDgBBgCSgQIQRgAUIUFWI0SYMwXaAJwAXgAgAFeiAHMApIBATSYAQCgAQHIARTAAQHaAQYIARABGAjaAQYIAhABGBQ&sclient=gws-wiz-serp#sie=lg;/g/11ns2_zxyw;2;/m/01hrtp;mt;fp;1;;;">
+              <div class="alinear d-flex align-items-center">
+                <div class="borde d d-flex">
+                  <img class="logo-europa" src="../images/europa-league-logo-0.png" alt="Europa League"></div>
+                <p class="nombres-comp">Europa League</p>
+              </div>
+          </a>
+        </li>
+          <li class="col mt-4"><a href="https://www.google.com/search?q=premier+league&sxsrf=APwXEdeEU2QWfBbWm0oP8e2GiHKqlIrtEg%3A1684774235609&ei=W51rZNDgJKPa1sQPhI6JiAY&ved=0ahUKEwiQ-tuOsYn_AhUjrZUCHQRHAmEQ4dUDCA8&uact=5&oq=premier+league&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIHCCMQigUQJzINCC4QigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzILCAAQgAQQsQMQgwEyDQgAEIoFELEDEIMBEEMyCwgAEIAEELEDEIMBMgcIABCKBRBDMgcIABCKBRBDOg0ILhCDARCxAxCKBRBDOgoILhCKBRDUAhBDOgcILhCKBRBDOgYIABAHEB46GwguEIMBELEDEIoFEEMQlwUQ3AQQ3gQQ4AQYAToNCC4QigUQsQMQ1AIQQzoHCCMQsQIQJzoNCAAQgAQQsQMQgwEQCkoECEEYAFAAWM4MYJ4TaABwAXgAgAFTiAG5BJIBATiYAQCgAQHAAQHaAQYIARABGBQ&sclient=gws-wiz-serp#sie=lg;/g/11pz7zbpnb;2;/m/02_tc;mt;fp;1;;;" target="_blank">
+            <div class="alinear d-flex align-items-center">
+              <div class="borde d d-flex">
+                <img src="../images/Premier League.png.png" alt="Premier League" class="premierlogo"></div>
+              <p class="nombres-comp">Premier League</p>
+            </div>
+           </a>
+          </li>
+          <li class="col mt-4"><a href="https://www.google.com/search?q=la+liga&sxsrf=APwXEdd62YCUGtyPnKVMf1s4vG7nOZ6-dA%3A1684774470227&ei=Rp5rZJuoDejN1sQPlY2quA4&ved=0ahUKEwib48v-sYn_AhXoppUCHZWGCucQ4dUDCA8&uact=5&oq=la+liga&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIQCC4QgwEQ1AIQsQMQigUQQzINCAAQigUQsQMQgwEQQzINCC4QgwEQsQMQigUQQzIHCAAQigUQQzITCC4QgAQQFBCHAhCxAxCDARDUAjILCAAQgAQQsQMQgwEyDQgAEIoFELEDEIMBEEMyDQguEIoFELEDEIMBEEMyBwgAEIoFEEM6CggAEEcQ1gQQsAM6DwguEIoFEMgDELADEEMYAToSCC4QigUQ1AIQyAMQsAMQQxgBSgQIQRgAUNAEWNAEYN4FaAFwAXgAgAFjiAFjkgEBMZgBAKABAcgBC8ABAdoBBAgBGAg&sclient=gws-wiz-serp#sie=lg;/g/11sqj24s0_;2;/m/09gqx;mt;fp;1;;;" target="_blank">
+            <div class="alinear d-flex align-items-center">
+              <div class="borde d d-flex">
+                <img src="../images/LaLiga_Santander_logo_.png.png" alt="La Liga" class="laliga-logo"></div>
+              <p class="nombres-comp">La Liga</p>
+            </div>
+          </a>
+        </li>
+          <li class="col mt-4"><a href="https://www.google.com/search?q=serie+a&sxsrf=APwXEdfgBxxOPg2i4GaH5A_GLUgWTleIqA%3A1684774473094&ei=SZ5rZOijBZ3V1sQP2Y6AuAs&ved=0ahUKEwio7Pr_sYn_AhWdqpUCHVkHALcQ4dUDCA8&uact=5&oq=serie+a&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzINCC4QgwEQsQMQigUQQzINCC4QigUQsQMQgwEQQzILCAAQgAQQsQMQgwEyBwgAEIoFEEMyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATILCC4QgAQQsQMQgwEyBQgAEIAEMgUIABCABDoHCCMQ6gIQJzoHCC4Q6gIQJzoSCC4QigUQyAMQ6gIQtAIQQxgBOgQIIxAnOgcILhCKBRBDOgoILhCKBRDUAhBDOg4ILhCABBCxAxCDARDUAjoOCC4QigUQsQMQgwEQ1AI6EAguEIoFELEDEIMBENQCEEM6EAguEIMBENQCELEDEIoFEEM6BQguEIAEOg4ILhCDARDUAhCxAxCABDoLCC4QigUQsQMQgwFKBAhBGABQAFj2CGCVCmgBcAF4AIABR4gB0QOSAQE3mAEAoAEBsAESwAEB2gEGCAEQARgI&sclient=gws-wiz-serp#sie=lg;/g/11sqvtnwvb;2;/m/03zv9;mt;fp;1;;;" target="_blank">
+            <div class="alinear d-flex align-items-center">
+              <div class="borde d d-flex">
+                <img src="../images/serie-a-logo-transparent.png" alt="Serie A" class="seriea-logo"></div>
+              <p class="nombres-comp">Serie A</p>
+            </div>
+          </a>
+        </li>
+          <li class="col mt-4"><a href="https://www.google.com/search?q=ligue+1&sxsrf=APwXEdf4P9kDSvn42TD-JEdhGJLO2pHSag%3A1684774596856&ei=xJ5rZLrzM7_n1sQPyo2SoA0&gs_ssp=eJzj4tTP1TcwMcmoyDFg9GLPyUwvTVUwBAA64QWs&oq=ligue&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgBMgcIIxCKBRAnMg0ILhCDARCxAxCKBRBDMg0ILhCDARCxAxCKBRBDMg0ILhCKBRCxAxCDARBDMg0IABCKBRCxAxCDARBDMgcIABCKBRBDMgsIABCABBCxAxCDATIOCC4QgAQQsQMQgwEQ1AIyBwgAEIoFEEMyDgguEIAEELEDEIMBENQCOgcIIxDqAhAnOgcILhDqAhAnOhIILhCKBRDIAxDqAhC0AhBDGAE6FQguENQCEIoFEMgDEOoCELQCEEMYAToVCC4QigUQ1AIQyAMQ6gIQtAIQQxgBOgQIIxAnOhAILhCDARDUAhCxAxCKBRBDOgcILhCKBRBDOhAILhCKBRCxAxCDARDUAhBDOhMILhAUEIMBEIcCENQCELEDEIAEOgoILhCKBRCxAxBDSgQIQRgAUABYtQdgjRVoAXABeACAAVGIAewCkgEBNZgBAKABAbABEsABAdoBBggBEAEYCA&sclient=gws-wiz-serp#sie=lg;/g/11pzkdpbgw;2;/m/044hxl;mt;fp;1;;;" target="_blank">
+            <div class="alinear d-flex align-items-center">
+              <div class="borde d d-flex">
+                <img src="../images/ligue-1-logo-2.png" alt="Ligue One" class="ligue1-logo"></div>
+              <p class="nombres-comp">Ligue One</p> 
+            </div>
+          </a>
+        </li>
+          <li class="col mt-4"><a href="https://www.google.com/search?q=bundesliga&sxsrf=APwXEdeuEbBylB49JwBFE5Vv3kG6bH0Yxg%3A1684774726160&ei=Rp9rZKewCbnI1sQPppeZ0AY&gs_ssp=eJzj4tTP1TcwNjc0szRg9OJKKs1LSS3OyUxPBABGIwa8&oq=bunde&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgBMgcIIxCKBRAnMg0ILhCDARCxAxCKBRBDMg0ILhCKBRCxAxCDARBDMg0ILhCKBRCxAxCDARBDMgsIABCABBCxAxCDATINCAAQigUQsQMQgwEQQzINCC4QigUQsQMQgwEQQzILCAAQgAQQsQMQgwEyBwgAEIoFEEMyCwgAEIAEELEDEIMBOgoIABBHENYEELADOgoIABCKBRCwAxBDOgoILhCKBRCwAxBDOg0IABDkAhDWBBCwAxgBOg8ILhCKBRDIAxCwAxBDGAI6BwgjEOoCECc6BwguEOoCECc6EgguEIoFEMgDEOoCELQCEEMYAjoECCMQJzoHCC4QigUQQzoLCC4QgwEQsQMQgAQ6CwguEIoFELEDEIMBOgsIABCKBRCxAxCDAUoECEEYAFDSBFipEWC6HWgCcAF4AIABU4gB8wKSAQE1mAEAoAEBsAESyAETwAEB2gEGCAEQARgJ2gEGCAIQARgI&sclient=gws-wiz-serp#sie=lg;/g/11j4slbd63;2;/m/037169;mt;fp;1;;;" target="_blank">
+            <div class="alinear d-flex align-items-center">
+              <div class="borde d d-flex">
+                <img src="../images/bundesliga-logo.png" alt="Bundesliga" class="bundes-logo"></div>
+              <p class="nombres-comp">Bundesliga</p>
+            </div>
+          </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
 
 
 
 
 
 
- <!--pie de pagina-->    
 
- <footer>
+
+
+
+
+
+
+
+
+<!--footer-->
+
+<footer>
   <nav>
-    <ul class="items-footer">
-      <li class="ig-footer">
-        <a href="https://www.instagram.com/"> <img src="../images/instagram.svg" alt="instagram"></a>
-      </li>
-      <li class="tw-footer">
-        <a href="https://twitter.com/?lang=es"> <img src="../images/twitter.svg" alt="twitter"></a>
-      </li>
-      <li class="fb-footer">
-        <a href="https://www.facebook.com/"> <img src="../images/facebook.svg" alt="facebook"></a>
-      </li>
-      <li class="icono-footer"><a href="./Index.html"> <img src="../images/pelota.png" alt="inicio"></a></li>
-    </ul>
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="col pe-2">
+      <a href="https://www.instagram.com/" target="_blank"> <i class="bi bi-instagram iconos"></i>
+      </a>
+    </div>
+    <div class="col pe-2">
+      <a href="https://twitter.com/?lang=es" target="_blank"> <i class="bi bi-twitter iconos"></i>
+      </a>
+    </div>
+    <div class="col pe-2">
+      <a href="https://www.facebook.com/" target="blank"> <i class="bi bi-facebook iconos"></i>
+      </a>
+    </div>
+    <div class="col pe-2 ">
+      <a href=""> <img src="../images/pelota.png" alt="inicio" class="icono-footer">
+      </a>
+    </div>
+  </div>
+</div>
   </nav>
 </footer>
 
 
+
+
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 

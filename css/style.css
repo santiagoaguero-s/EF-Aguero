@@ -1,6 +1,5 @@
-
-/*header*/
 body{
+    min-height: 100vh;
     background-image: url(../images/cancha.webp);
     background-position: center;
     background-position: 0 18px;
@@ -8,20 +7,39 @@ body{
     background-size: cover;
     
 }
+.iconos{
+    color: rgb(248, 235, 215);
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+/*header*/
+
 header{
     grid-area: header;
     background-color: rgb(44, 44, 52);
-    
+    border-style: outset;
+    border-radius: 5px 5px 12px 12px;
+    border-color:  rgb(248, 235, 215);;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+
 }
+
+
 .logo-pelota{
     width: 100px;
     border-radius: 50px;
+    margin-top: -20%;
 }
 .formulario {
     display: block;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    margin-top: -35%;
     font-size: 50px;
     color: rgb(248, 235, 215);
   }
@@ -32,13 +50,13 @@ header{
 footer{
     grid-area: footer;
     background-color: rgb(44, 44, 52) ;
+    border-style: outset;
+    border-radius: 10px 10px 5px 5px;
+    border-color:  rgb(248, 235, 215);;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.iconos{
-    color: rgb(248, 235, 215);
-    font-size: 30px;
-}
 
 .icono-footer{
     width: 60px;
@@ -47,23 +65,14 @@ footer{
     
     
 }
-.cards{
-    width: 250px;
-    height: auto;
-    
-}
 
-.slide{
-    margin-top: 50px;
-    width: 745px;
-    height: 420px;
-}
+
 /*grilla index*/
 
 #grilla{ 
     display: grid;
     row-gap: 35px;
-    grid-template-rows: 100px auto auto auto;
+    grid-template-rows: 90px auto auto auto;
     grid-template-columns: 20% 60% 20% ;
     grid-template-areas: 
     "header header header"
@@ -73,12 +82,12 @@ footer{
 }
 #izq{
     grid-area: izq;
-    border: solid 10px black;
+    
 }
 #der{
     grid-area: der;
     align-self: center;
-    border: solid 10px black;
+    
 }
 #parte1{
     grid-area: parte1;
@@ -90,3 +99,101 @@ footer{
     grid-area: parte2;
     padding-left: 10px;
 }
+iframe{
+    z-index: -10;
+}
+
+.cards{
+    width: 250px;
+    height: auto;
+    
+}
+
+.slide{
+    margin-top: 20px;
+    width: 722rem;
+    height: 26.5rem;
+    
+}
+
+/* COMPETICIONES*/
+
+#grilla-competiciones{ 
+    display: grid;
+    row-gap: 40px;
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: 
+    "header header header"
+    "izq competiciones der"
+    "footer footer footer";
+}
+
+li{
+    list-style: none;
+}
+#competiciones{
+    grid-area: competiciones;
+    border-style: outset;
+    border-color: rgb(248, 235, 215);
+ 
+}
+
+.seriea-logo, .laliga-logo, .logo-champions, .premierlogo, .bundes-logo, .ligue1-logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+   
+   
+}
+.logo-europa{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+}
+.alinear{
+    border-style: solid ;
+    text-decoration: none;
+    border-color: rgb(248, 235, 215);
+    width: 48%
+    
+}
+.nombres-comp{
+    padding-left: 50px;
+    
+}
+.borde{
+    border: solid 4px #9A9285;
+    border-radius: 110px;
+    width: 99px;
+    z-index: 11;
+    
+}
+
+/*EQUIPOS*/
+
+#grilla-equipos{
+    display: grid;
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 
+    "header header header header"
+    "izq equipos1 equipos2 der"
+    "footer footer footer footer";
+    border: solid 10px black;
+}
+#equipos1{
+    grid-area: equipos1;
+    border: solid 10px blue;
+
+}
+#equipos2{
+    grid-area: equipos2;
+    border: solid 10px red;
+}
+.real-madrid, .manchester-city, .barca, .man-u, .milan, .bayern, .roma, .inter, .sevilla, .arsenal{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+}
+
