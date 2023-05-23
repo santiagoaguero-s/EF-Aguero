@@ -174,26 +174,27 @@ li{
 
 #grilla-equipos{
     display: grid;
+    column-gap: 25px;
     grid-template-rows: 100px auto auto;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 10% 40% 40% 10%;
     grid-template-areas: 
     "header header header header"
     "izq equipos1 equipos2 der"
     "footer footer footer footer";
-    border: solid 10px black;
+    border: solid 10px white;
+    
 }
 #equipos1{
     grid-area: equipos1;
     border: solid 10px blue;
-
 }
 #equipos2{
     grid-area: equipos2;
     border: solid 10px red;
 }
-.real-madrid, .manchester-city, .barca, .man-u, .milan, .bayern, .roma, .inter, .sevilla, .arsenal{
+.madrid{
     width: 90px;
     height: 90px;
-    border-radius: 100px;
+    border-radius: 90px;
 }
 
