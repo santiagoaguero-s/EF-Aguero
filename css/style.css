@@ -72,7 +72,7 @@ footer{
 #grilla{ 
     display: grid;
     row-gap: 35px;
-    grid-template-rows: 90px auto auto auto;
+    grid-template-rows: 100px auto auto auto;
     grid-template-columns: 20% 60% 20% ;
     grid-template-areas: 
     "header header header"
@@ -172,29 +172,90 @@ li{
 
 /*EQUIPOS*/
 
-#grilla-equipos{
-    display: grid;
-    column-gap: 25px;
-    grid-template-rows: 100px auto auto;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-areas: 
-    "header header header header"
-    "izq equipos1 equipos2 der"
-    "footer footer footer footer";
-    border: solid 10px white;
-    
-}
-#equipos1{
-    grid-area: equipos1;
-    border: solid 10px blue;
-}
-#equipos2{
-    grid-area: equipos2;
-    border: solid 10px red;
-}
-.madrid{
+.madrid, .city, .barca, .bayern, .juve, .inter, .milan, .sevilla, .roma, .chelsea{
     width: 90px;
     height: 90px;
     border-radius: 90px;
+    border: solid 4px #9A9285;
+    
+}
+#equipos-grilla{
+    display: grid;
+    grid-template-rows: 100px auto 65px;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-areas: 
+    "header header header header"
+    "izq equipos-izq equipos-der der"
+    "footer footer footer footer";
+    min-height: 120vh;
+    
+    
 }
 
+#equipos-izq{
+    grid-area: equipos-izq;
+    border-style: outset;
+    border-color: rgb(248, 235, 215);
+    width: 35rem;
+    margin-top: 1rem;
+    height: 40rem;
+}
+#equipos-der{
+    grid-area: equipos-der;
+    border-style: outset;
+    border-color: rgb(248, 235, 215);
+    width: 35rem;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    height: 40rem;
+    
+}
+.alinear-equip{
+    border-style: solid ;
+    text-decoration: none;
+    border-color: rgb(248, 235, 215);
+    width: 68%
+
+}
+.nombres-equip{
+    padding-left: 20px;
+}
+
+/*Partidos*/
+
+#partidos-grilla{
+    display: grid;
+    grid-template-rows: 100px auto 65px;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-areas: 
+    "header header header header"
+    "izq partidos-izq partidos-der der"
+    "footer footer footer footer";
+    min-height: 120vh;
+   
+    
+}
+#partidos-izq{
+    grid-area: partidos-izq;
+    
+    
+}
+#partidos-der{
+    grid-area: partidos-der;
+    margin-left: 8rem;
+    
+    
+
+    
+}
+.cartas-equip{
+    width: 54rem;
+    background-color: transparent;
+    border: solid 3px black;
+    
+
+}
+.imag-partidos{
+    height: 11rem;
+    
+}
