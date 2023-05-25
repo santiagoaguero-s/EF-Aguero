@@ -235,14 +235,16 @@ li{
    
     
 }
+
 #partidos-izq{
     grid-area: partidos-izq;
+    
     
     
 }
 #partidos-der{
     grid-area: partidos-der;
-    margin-left: 8rem;
+    margin-left: 4rem;
     
     
 
@@ -252,10 +254,16 @@ li{
     width: 54rem;
     background-color: transparent;
     border: solid 3px black;
+    width: 380rem;
+    height: 10rem;
     
 
 }
 .imag-partidos{
-    height: 11rem;
+   height: 9.6rem;
+    width: 100%;
+   
+    
     
 }
+
