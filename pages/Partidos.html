@@ -19,22 +19,21 @@
     <aside id="der"></aside>
     <!--header-->
 
-    <header>
+    <header> 
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="../Index.html">
             <img src="../images/pelota.png" alt="" class="logo-pelota">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="../pages/Competiciones.html">Competiciones</a>
-              <a class="nav-link" href="../pages/Equipos.html">Equipos</a>
-              <a class="nav-link" href="../pages/Partidos.html">Partidos</a>
-            </div>
+              <a class="nav-link active" id="a-header" aria-current="page" href="../pages/Competiciones.html">Competiciones</a>
+              <a class="nav-link a-header" href="../pages/Equipos.html">Equipos</a>
+              <a class="nav-link a-header" href="../pages/Partidos.html">Partidos</a>
+            </div> 
             <a href="../pages/Formulario.html" class="nav-link ms-auto">
               <i class="bi bi-person-circle formulario"></i>
             </a>
@@ -58,9 +57,9 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Manchester City vs Inter</h5>
+                      <h3 class="card-title">Manchester City vs Inter</h3>
                       <p class="card-text">10/6 16:00hs</p>
-                      <p class="card-text"><small class="text-body-secondary">Uefa Champions League</small></p>
+                      <p class="card-text"><small class="custom-small">Uefa Champions League</small></p>
                     </div>
                   </div>
                 </div>
@@ -72,39 +71,9 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Juventus vs Milan</h5>
+                      <h3 class="card-title">Juventus vs Milan</h3>
                       <p class="card-text">28/58 15:45hs</p>
-                      <p class="card-text"><small class="text-body-secondary">Serie A</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div></li>
-              <li class="col"><div class="card mb-3 cartas-equip" style="max-width: 720px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../images/atl-real.png" class="img-fluid rounded-start imag-partidos" alt="Atletico de Madrid vs Real Sociedad">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Atletico de Madrid vs Real Sociedad</h5>
-                      <p class="card-text">28/5 14:00hs</p>
-                      <p class="card-text"><small class="text-body-secondary">La Liga</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div></li>
-            </div>
-            <div id="partidos-der" class="flex-column">
-              <li class="col"><div class="card mb-3 cartas-equip" style="max-width: 720px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="../images/sevilla-roma.png" class="img-fluid rounded-start imag-partidos" alt="Sevilla vs Roma">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Sevilla vs Roma</h5>
-                      <p class="card-text">31/5 16:00hs</p>
-                      <p class="card-text"><small class="text-body-secondary">Europa League</small></p>
+                      <p class="card-text"><small class="custom-small">Serie A</small></p>
                     </div>
                   </div>
                 </div>
@@ -116,9 +85,40 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Real Madrid vs Barca</h5>
+                      <h4 class="card-title">Real Madrid vs Barca</h4>
                       <p class="card-text">29/7 16:00hs</p>
-                      <p class="card-text"><small class="text-body-secondary">Amistosos</small></p>
+                      <p class="card-text"><small class="custom-small">Amistosos</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div></li>
+           </div>
+
+            <div id="partidos-der" class="flex-column">
+              <li class="col"><div class="card mb-3 cartas-equip" style="max-width: 720px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../images/sevilla-roma.png" class="img-fluid rounded-start imag-partidos" alt="Sevilla vs Roma">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 class="card-title">Sevilla vs Roma</h4>
+                      <p class="card-text">31/5 16:00hs</p>
+                      <p class="card-text"><small class="custom-small">Europa League</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div></li>
+              <li class="col"><div class="card mb-3 cartas-equip" style="max-width: 720px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="../images/atl-real.png" class="img-fluid rounded-start imag-partidos" alt="Atletico de Madrid vs Real Sociedad">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h4 class="card-title">Atletico de Madrid vs Real Sociedad</h4>
+                      <p class="card-text">28/5 14:00hs</p>
+                      <p class="card-text"><small class="custom-small">La Liga</small></p>
                     </div>
                   </div>
                 </div>
@@ -130,9 +130,9 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Manchester United vs Chelsea</h5>
+                      <h4 class="card-title">Manchester United vs Chelsea</h4>
                       <p class="card-text">25/5 16:00hs</p>
-                      <p class="card-text"><small class="text-body-secondary">Premier league</small></p>
+                      <p class="card-text"><small class="custom-small">Premier league</small></p>
                     </div>
                   </div>
                 </div>
@@ -143,7 +143,7 @@
       </div>
     </div>
   </main>
-
+ 
 
     <!--footer-->
 

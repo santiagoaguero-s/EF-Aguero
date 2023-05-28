@@ -11,13 +11,23 @@ body{
     color: rgb(248, 235, 215);
     font-size: 30px;
 }
-a{
-    text-decoration: none;
+a, .a-header, p, h1, h2{
+     font-family: 'Manrope', sans-serif;
+     text-decoration: none;
+    color:  rgb(248, 235, 215);
+    
 }
+#a-header{
+    font-family: 'Manrope', sans-serif;
+     text-decoration: none;
+    color:  rgb(248, 235, 215)
+}
+
 /*header*/
 
 header{
     grid-area: header;
+    width: 100%;
     background-color: rgb(44, 44, 52);
     border-style: outset;
     border-radius: 5px 5px 12px 12px;
@@ -25,12 +35,14 @@ header{
     position: sticky;
     top: 0;
     z-index: 12;
+    
+      
 
 }
 
 
 .logo-pelota{
-    width: 100px;
+    width: 7rem;
     border-radius: 50px;
     margin-top: -20%;
 }
@@ -55,6 +67,7 @@ footer{
     border-color:  rgb(248, 235, 215);;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -86,26 +99,31 @@ footer{
 }
 #der{
     grid-area: der;
-    align-self: center;
+    
     
 }
 #parte1{
     grid-area: parte1;
+    display: grid;
+    
     
        
        
 }
 #parte2{
     grid-area: parte2;
-    padding-left: 10px;
+   padding-left: 10px;
+
 }
 iframe{
     z-index: -10;
+    
 }
 
 .cards{
     width: 250px;
     height: auto;
+    
     
 }
 
@@ -113,8 +131,16 @@ iframe{
     margin-top: 20px;
     width: 722rem;
     height: 26.5rem;
-    
+   
 }
+.card-title{
+    color: rgb(248, 235, 215);
+}
+.fondo-carta{
+    background-color: rgba(5, 7, 12, 0.5);
+    border: solid 2px rgb(248, 235, 215);
+}
+
 
 /* COMPETICIONES*/
 
@@ -134,15 +160,19 @@ li{
 }
 #competiciones{
     grid-area: competiciones;
-    border-style: outset;
-    border-color: rgb(248, 235, 215);
+    border: solid 5px rgb(248, 235, 215) ;
+    border-radius: 4px;
+    background:rgba(5, 7, 12, 0.5);
+    box-shadow: inset -1rem -1rem 57px 0.8rem  #00B100;
+    
+    
  
 }
-
 .seriea-logo, .laliga-logo, .logo-champions, .premierlogo, .bundes-logo, .ligue1-logo{
     width: 90px;
     height: 90px;
     border-radius: 100px;
+    
    
    
 }
@@ -155,6 +185,7 @@ li{
     border-style: solid ;
     text-decoration: none;
     border-color: rgb(248, 235, 215);
+    border-radius: 3px;
     width: 48%
     
 }
@@ -163,10 +194,11 @@ li{
     
 }
 .borde{
-    border: solid 4px #9A9285;
+    border: solid 4px #9A9285 ;
     border-radius: 110px;
     width: 99px;
     z-index: 11;
+    
     
 }
 
@@ -194,16 +226,20 @@ li{
 
 #equipos-izq{
     grid-area: equipos-izq;
-    border-style: outset;
-    border-color: rgb(248, 235, 215);
+    border: solid 5px rgb(248, 235, 215) ;
+    border-radius: 4px;
+    background:rgba(5, 7, 12, 0.5);
+    box-shadow: inset -1rem -1rem 57px 0.2rem  #00B100;
     width: 35rem;
     margin-top: 1rem;
     height: 40rem;
 }
 #equipos-der{
     grid-area: equipos-der;
-    border-style: outset;
-    border-color: rgb(248, 235, 215);
+    border: solid 5px rgb(248, 235, 215) ;
+    border-radius: 4px;
+    background:rgba(5, 7, 12, 0.5);
+    box-shadow: inset -1rem -1rem 57px 0.2rem  #00B100;
     width: 35rem;
     margin-left: 8rem;
     margin-top: 1rem;
@@ -241,6 +277,7 @@ li{
     
     
     
+    
 }
 #partidos-der{
     grid-area: partidos-der;
@@ -253,9 +290,12 @@ li{
 .cartas-equip{
     width: 54rem;
     background-color: transparent;
-    border: solid 3px black;
     width: 380rem;
     height: 10rem;
+    border: solid 3px rgb(248, 235, 215) ;
+    border-radius: 4px;
+    background:rgba(5, 7, 12, 0.5);
+    
     
 
 }
@@ -293,13 +333,37 @@ li{
 form{
     display: flex;
     flex-direction: column;
+    padding: 20px 20px 30px 20px;
+    margin-top: 25px;
+    background: rgba(5, 7, 12, 0.7);
+    font-family: 'Manrope', sans-serif;
+    color:  rgb(248, 235, 215);
 
+    
+
+}
+.input-formulario{
+    font-size: 1.6rem;
+    height: 2rem;
+    width: 100%;
+    padding-left: 10px;
+    border: solid 3px #00B100;
+    border-radius: 10px;
+    background: rgba(5, 7, 12, 0.7);
+    font-family: 'Manrope', sans-serif;
+    color:  rgb(248, 235, 215);
+
+}
+.boton{
+    background-color: #00B100;
+    border-color:rgb(248, 235, 215) ;
 }
 .body-form{
     min-height: 100vh;
     background-image: url(../images/cancha.webp);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    
     
     
 
@@ -315,4 +379,62 @@ form{
     opacity: 0.4;
     z-index: -5;
     
+}
+.form-text{
+    font-family: 'Manrope', sans-serif;
+    color:  rgb(248, 235, 215);
+}
+.input-formulario{
+        background:rgba(5, 7, 12, 0.5);
+        font-size: 18px;
+        font-family: 'Manrope', sans-serif;
+        
+    
+}
+.card-text{
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+   color:  rgb(248, 235, 215);
+    
+}
+.small-custom{
+    font-family: 'Manrope', sans-serif;
+    color:  rgb(248, 235, 215);    
+}
+.card-footer{
+    border-top: solid 1px rgb(248, 235, 215);
+}
+/*Medias Query*/
+
+@media only screen and (max-width: 576px) {
+    .p-formulario{
+       padding-right: 6rem;
+    }
+    iframe{
+        width: 33.5rem;
+        height: 18.75rem;
+    }
+    .slide{
+        width: 30.5rem;
+        height: 18.75rem;
+    }
+    .navbar {
+        position: relative;
+        
+      }
+      
+      .nav-link.ms-auto {
+        position: fixed;
+        top: 0;
+        right: 5.6rem;
+        margin-top: 2.5rem; 
+      }
+      .navbar-nav{
+        background-color: rgba(5, 7, 12, 0.5);
+        width: 20rem;
+        padding-left: 1rem;
+      }
+      #competiciones{
+        min-height: auto;
+      }    
 }
