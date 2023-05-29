@@ -147,7 +147,7 @@ iframe{
 #grilla-competiciones{ 
     display: grid;
     row-gap: 40px;
-    grid-template-rows: 100px auto auto;
+    grid-template-rows: 100px 1fr auto;
     grid-template-columns: 20% auto 20%;
     grid-template-areas: 
     "header header header"
@@ -219,7 +219,7 @@ li{
     "header header header header"
     "izq equipos-izq equipos-der der"
     "footer footer footer footer";
-    min-height: 120vh;
+   
     
     
 }
@@ -267,7 +267,8 @@ li{
     "header header header header"
     "izq partidos-izq partidos-der der"
     "footer footer footer footer";
-    min-height: 120vh;
+    height: 100vh;
+  
    
     
 }
@@ -318,7 +319,7 @@ li{
     "izq registro der"
     "izq inicio-sesion der"
     "footer footer footer";
-    min-height: 130vh;
+   
 }
 #registro{
     grid-area: registro;
@@ -359,13 +360,7 @@ form{
     border-color:rgb(248, 235, 215) ;
 }
 .body-form{
-    min-height: 100vh;
-    background-image: url(../images/cancha.webp);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    
-    
-    
+    position: relative;
 
 }
 .body-form::before{
@@ -373,9 +368,7 @@ form{
     background-color: black;
     position: absolute;
     width: 100%;
-    height: 130vh;
-    left: 0;
-    top: 0;
+    min-height: 100%;
     opacity: 0.4;
     z-index: -5;
     
@@ -407,16 +400,31 @@ form{
 /*Medias Query*/
 
 @media only screen and (max-width: 576px) {
+    /*index*/
+   .body-index{
+    background-image: none;
+    background-color: #05470A;
+   }
+   
     .p-formulario{
-       padding-right: 6rem;
+       padding-right: 6.5rem;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       
+       
+      
     }
     iframe{
-        width: 33.5rem;
+        width: 34.3rem;
         height: 18.75rem;
+        display: flex;
+        right: 1.2rem;
     }
     .slide{
         width: 30.5rem;
         height: 18.75rem;
+        display: flex;
+        right: 2.2rem;
     }
     .navbar {
         position: relative;
@@ -429,12 +437,131 @@ form{
         right: 5.6rem;
         margin-top: 2.5rem; 
       }
+      .nav-link.ms-auto.index {
+        position: fixed;
+        top: 0;
+        right: 7rem;
+        margin-top: 2.5rem; 
+      }
       .navbar-nav{
         background-color: rgba(5, 7, 12, 0.5);
         width: 20rem;
         padding-left: 1rem;
       }
-      #competiciones{
-        min-height: auto;
-      }    
+   
+
+   /*Competiciones*/
+.body-c{
+    position: relative;
+    padding-bottom: 10rem;
+    background-image: none;
+    background-color: #05470A;
+    
+}
+   #competiciones{
+    margin-right: 3rem;
+   
+  }   
+   .alinear{
+   width: 90%   
+}
+.c-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.compet{
+ width: 120%;
+    
+   
+}
+
+/*Equipos*/
+.body-e{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    background-image: none;
+    background-color: #05470A;
+    
+    
+}
+.header-e{
+    height: 100px;
+    width: 100%;
+}
+
+#equipos-grilla{
+    display: initial;
+   
+}
+
+.cont-equipos, .d-ul, .flex-column {
+    display: flex;
+    flex-direction: column; 
+}
+.d-ul{
+    align-items: center;
+}
+#equipos-der{
+   display: flex;
+   margin-top: 3rem ;
+   margin-right: 8rem;
+}
+ 
+/*Partidos*/
+.body-p{
+    position: relative;
+    height: 271vh;
+    background-image: none;
+    background-color: #05470A;
+}
+.cartas-equip{
+    width: 18rem;    
+    height: 20rem;
+    border: solid 3px rgb(248, 235, 215) ;
+
+    
+    
+}
+.main-p{
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+.p-ul{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+#partidos-der{
+  
+    margin-right: 3.7rem;
+}
+#partidos-izq{
+   
+
+}
+
+
+/*formulario*/
+.body-form{
+    position: relative;
+    background-image: none;
+    background-color: #09680F;
+    
+}
+.footer-form{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+form{
+    margin-top: 6rem;
+}
+
 }
