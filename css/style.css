@@ -98,17 +98,10 @@ footer{
     
 }
 #der{
-    grid-area: der;
-    
-    
+    grid-area: der;   
 }
 #parte1{
-    grid-area: parte1;
-    display: grid;
-    
-    
-       
-       
+    grid-area: parte1;    
 }
 #parte2{
     grid-area: parte2;
@@ -129,9 +122,14 @@ iframe{
 
 .slide{
     margin-top: 20px;
-    width: 722rem;
+    width: 100px;
     height: 26.5rem;
+  
    
+}
+.carousel{
+    
+    max-width: 48rem;
 }
 .card-title{
     color: rgb(248, 235, 215);
@@ -140,6 +138,7 @@ iframe{
     background-color: rgba(5, 7, 12, 0.5);
     border: solid 2px rgb(248, 235, 215);
 }
+
 
 
 /* COMPETICIONES*/
@@ -400,32 +399,14 @@ form{
 /*Medias Query*/
 
 @media only screen and (max-width: 576px) {
+
+
     /*index*/
    .body-index{
     background-image: none;
     background-color: #05470A;
+    
    }
-   
-    .p-formulario{
-       padding-right: 6.5rem;
-       padding-top: 1rem;
-       padding-bottom: 1rem;
-       
-       
-      
-    }
-    iframe{
-        width: 34.3rem;
-        height: 18.75rem;
-        display: flex;
-        right: 1.2rem;
-    }
-    .slide{
-        width: 30.5rem;
-        height: 18.75rem;
-        display: flex;
-        right: 2.2rem;
-    }
     .navbar {
         position: relative;
         
@@ -436,19 +417,44 @@ form{
         top: 0;
         right: 5.6rem;
         margin-top: 2.5rem; 
+       
       }
       .nav-link.ms-auto.index {
         position: fixed;
         top: 0;
-        right: 7rem;
+        right: 6rem;
         margin-top: 2.5rem; 
+        
       }
       .navbar-nav{
         background-color: rgba(5, 7, 12, 0.5);
         width: 20rem;
         padding-left: 1rem;
       }
-   
+
+.carousel{
+  width: 10rem;
+  height: 15rem;
+  margin-right: 2.5rem;
+  
+}
+iframe{
+    width: 20rem;
+    height: 15rem;
+    
+}
+.p-iframe{
+    padding: 1rem 0 1rem 0;
+}
+
+
+.cards{
+    width: 20rem;
+}
+.noticias-titulo{
+    padding-left: 5rem;
+}
+
 
    /*Competiciones*/
 .body-c{
@@ -513,38 +519,25 @@ form{
 /*Partidos*/
 .body-p{
     position: relative;
-    height: 271vh;
+    height: 260vh;
     background-image: none;
     background-color: #05470A;
 }
 .cartas-equip{
     width: 18rem;    
-    height: 20rem;
-    border: solid 3px rgb(248, 235, 215) ;
-
-    
-    
+    height: auto;
+    border: solid 3px rgb(248, 235, 215) ;  
 }
-.main-p{
+.main-p, .p-ul {
     display: flex;
     flex-direction: column;
-    
-  
 }
-.p-ul{
-    display: flex;
-    flex-direction: column;
-    
 
-}
 #partidos-der{
-  
-    margin-right: 3.7rem;
+  margin-right: 3.8rem;
+    
 }
-#partidos-izq{
-   
 
-}
 
 
 /*formulario*/
@@ -565,3 +558,243 @@ form{
 }
 
 }
+
+/*Media Query para 768px*/
+
+@media only screen and ( min-width: 576px) and (max-width: 768px) {
+
+    /*index*/
+
+    .navbar {
+        position: relative;
+        
+        
+      }
+      
+      
+      .nav-link.ms-auto {
+        position: fixed;
+        top: 0;
+        right: 5.6rem;
+        margin-top: 2.5rem; 
+       
+      }
+      .nav-link.ms-auto.index {
+        position: fixed;
+        top: 0;
+        right: 6rem;
+        margin-top: 2.5rem; 
+        
+      }
+      .navbar-nav{
+        background-color: rgba(5, 7, 12, 0.5);
+        width: 20rem;
+        padding-left: 1rem;
+      }
+
+
+      .carousel{
+        width: 45rem;
+        height: 16rem;
+        margin-right: 2.5rem;
+        
+        
+      }
+      .p-iframe{
+        padding: 1rem 0 1rem 0;
+       
+      }
+
+      iframe{
+        width: 30rem;
+        height: 16rem;
+      }
+
+      /*Equipos*/
+
+      .header-e{
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 100%;
+    }
+    .footer-e{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        
+    }
+    
+    .body-e{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 120vh; 
+        
+    }
+
+    .d-ul{
+        padding-top: 1rem;
+    }
+    .alinear-equip{
+        width: 15rem;
+    }
+    
+    #equipos-izq, #equipos-der{
+        width: 30rem;
+    }
+    .titulo-eq{
+        padding-top: 4rem;
+    }
+
+    /*Partidos*/
+
+.main-p, .p-ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartas-equip{
+    width: 40rem;
+}
+#partidos-der{
+    margin-left: -0.01rem;
+}
+.header-p{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+.footer-p{
+    position: absolute;
+    bottom: -32rem;
+    width: 100%;
+}
+.body-p{
+    height: 155vh;
+}
+.titulo-p{
+    padding-top: 6rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Query para 992px*/
+
+@media only screen and (min-width: 768) and (max-width: 992px) {
+
+    /*Index*/
+
+    .p-formulario{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+   .carousel{
+    width: 30rem;
+
+   }
+   iframe{
+    width: 100%;
+    
+   }
+
+   /*Competiciones*/
+
+   .alinear{
+    width: 90%;
+   }
+
+   /*Equipos*/
+   
+   .header-e{
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+   }
+   
+   .footer-e{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   }
+   #equipos-izq, #equipos-der {
+  padding-right: 10rem;
+
+}
+.alinear-equip{
+    width: 120%;
+}
+.titulo-eq{
+    padding-top: 6rem;
+}
+
+/*Partidos*/
+
+.body-p{
+    min-height: 120vh;
+    position: relative;
+    background-image: none;
+    background-color: #05470A;
+    
+}
+.header-p{
+    position: absolute;
+    top: 0;
+    height: 100px;
+   width: 100%;
+}
+.footer-p{
+    position: absolute;
+    bottom: 0;
+  width: 100%;
+}
+.main-p, .p-ul {
+    display: flex;
+    flex-direction: column;
+    
+    
+  
+}
+#partidos-izq{
+    padding-left: 3.8rem;
+  
+}
+.titulo-p{
+    padding-top: 6rem;
+}
+
+}
+
+/*Media Query para 1200px*/
+
