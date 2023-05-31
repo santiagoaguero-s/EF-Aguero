@@ -561,7 +561,7 @@ form{
 
 /*Media Query para 768px*/
 
-@media only screen and ( min-width: 576px) and (max-width: 768px) {
+@media only screen and ( min-width: 577px) and (max-width: 768px) {
 
     /*index*/
 
@@ -597,55 +597,73 @@ form{
         width: 45rem;
         height: 16rem;
         margin-right: 2.5rem;
+        border: solid 3px red;
         
         
       }
       .p-iframe{
         padding: 1rem 0 1rem 0;
-       
+       margin-left: 0.9rem;
       }
 
       iframe{
         width: 30rem;
         height: 16rem;
       }
+      #parte1{
+        margin-left: -3rem;
+      }
+      #parte2{
+        margin-left: 4rem;
+      }
+      .cards{
+        width: 18rem;
+      }
+      .noticias-titulo{
+        margin-left: -2.8rem;
+      }
+
+      /*Compecticiones*/
+
+      .alinear{
+        width: 20rem;
+      }
 
       /*Equipos*/
 
       .header-e{
-        position: absolute;
-        top: 0;
-        height: 100px;
-        width: 100%;
-    }
-    .footer-e{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        
-    }
+        height: 100px;}
+       
+
     
     .body-e{
         display: flex;
         flex-direction: column;
         position: relative;
-        min-height: 120vh; 
+        min-height: 115vh; 
         
     }
 
-    .d-ul{
-        padding-top: 1rem;
+    
+    #equipos-grilla{
+        display: initial;
     }
+
+    #equipos-izq, #equipos-der{
+        width: 30rem;
+       
+     }
+
     .alinear-equip{
         width: 15rem;
     }
     
-    #equipos-izq, #equipos-der{
-        width: 30rem;
+    #equipos-der{
+        margin-left: 1rem;
     }
-    .titulo-eq{
-        padding-top: 4rem;
-    }
+
+  
+  
 
     /*Partidos*/
 
@@ -681,59 +699,32 @@ form{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Media Query para 992px*/
 
-@media only screen and (min-width: 768) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
 
     /*Index*/
-
+    .carousel{
+        height: 25rem;
+    }
     .p-formulario{
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-   .carousel{
-    width: 30rem;
 
-   }
-   iframe{
-    width: 100%;
+iframe{
+    width: 100% ;
+    height: 25rem;
     
-   }
+    
+}
 
    /*Competiciones*/
 
    .alinear{
-    width: 90%;
+    width: 100%;
    }
-
+  
    /*Equipos*/
    
    .header-e{
@@ -750,13 +741,17 @@ form{
    }
    #equipos-izq, #equipos-der {
   padding-right: 10rem;
+  width: 55rem;
 
 }
 .alinear-equip{
-    width: 120%;
+    width: 150%;
 }
 .titulo-eq{
     padding-top: 6rem;
+}
+#equipos-der{
+    margin-left: 4rem;
 }
 
 /*Partidos*/
@@ -798,3 +793,89 @@ form{
 
 /*Media Query para 1200px*/
 
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+/*Index*/
+
+.p-formulario{
+    padding: 1rem 0 1rem 0;
+}
+.carousel{
+    width: 20rem;
+}
+iframe{
+    width: 100%;
+}
+.cards{
+    width: 20rem;
+}
+
+/*Competiciones*/
+
+.c-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.alinear{
+    width: 80%;
+}
+
+/*Equipos*/
+.body-e{
+ 
+   height: 127.5vh;
+    
+    
+    border: solid 3px red;
+}
+.footer-e{
+    
+    width: 100%;
+}
+.cont-equipos, .d-ul, .flex-column {
+    display: flex;
+    flex-direction: column; 
+}
+#equipos-izq {
+    width: 50rem;
+}
+#equipos-der{
+    margin-left: -0.01rem;
+    width: 50rem;
+}
+
+/*Partidos*/
+
+.cartas-equip{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height:10rem ;
+}
+
+.main-p, .p-ul {
+    display: flex;
+    flex-direction: column;
+}
+#partidos-der{
+margin-left: -0.01rem;
+}
+
+/*Formularios*/
+
+form{
+    font-size: 25px;
+    width: 30rem;
+    height: 30rem;
+ 
+}
+.input-formulario{
+    height: 4rem;
+}
+.boton{
+    font-size: 25px;
+  height: 4rem;
+}
+
+}
