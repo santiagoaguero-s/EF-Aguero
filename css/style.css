@@ -201,7 +201,7 @@ li{
     
 }
 
-/*EQUIPOS*/
+/*Equipos*/
 
 .madrid, .city, .barca, .bayern, .juve, .inter, .milan, .sevilla, .roma, .chelsea{
     width: 90px;
@@ -777,9 +777,6 @@ iframe{
 .main-p, .p-ul {
     display: flex;
     flex-direction: column;
-    
-    
-  
 }
 #partidos-izq{
     padding-left: 3.8rem;
@@ -794,6 +791,13 @@ iframe{
 /*Media Query para 1200px*/
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    a, .a-header, p, #a-header, .card-text {
+        font-size: 20px;
+    }  
+    .titulo-eq, .titulo-p, .noticias-titulo{
+          font-size: 35px;
+    }
 
 /*Index*/
 
@@ -877,5 +881,152 @@ form{
     font-size: 25px;
   height: 4rem;
 }
+
+}
+
+/*Media Query para 1400px*/
+
+@media only screen and (max-width: 1400px) {
+
+    a, .a-header, p, #a-header, .card-text {
+        font-size: 23px;
+    }  
+    .titulo-eq, .titulo-p, .noticias-titulo, .titulo-comp{
+         font-family: 'Manrope', sans-serif;
+          
+    }
+
+    /*Index*/
+    .body-index{
+        position: relative;
+        background-image: none;
+        background-color: #05470A
+       
+    }
+    
+    .footer-i{
+        position: absolute;
+       bottom: 0;
+       width: 100%;   
+    }
+    .carousel{
+        width: 45rem;
+        height: 30rem;
+    }
+    iframe{
+        width: 100%;
+        height: 30rem;
+    }
+    .p-formulario{
+        padding: 1rem 0 1rem 0;
+    }
+    .cards{
+        width: 25rem;
+        padding-bottom: 4rem;
+    }
+
+    /*Competiciones*/
+
+    .body-c{
+        position: relative;
+        background-image: none;
+        background-color: #05470A;
+    }
+    
+
+    .c-footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #competiciones{
+       width: 60rem; 
+       margin-top: 3rem;
+       margin-left: -15rem;
+    }
+    .alinear{
+        margin-top: 3rem;
+        width: 70%
+    }
+    .titulo-comp{
+        margin-left: -15rem;
+    }
+    .nombres-comp{
+        font-size: 30px;
+    }
+
+    /*Equipos*/
+
+    .body-e{
+        position: relative;
+    }
+    .footer-e{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .main-equipos{
+        margin-left: -8rem;
+       padding-top: 3rem;
+    }
+    #equipos-der{
+        margin-left: 6.5rem;
+        height: 55rem;
+        padding-top: 3rem;
+    }
+    #equipos-izq{
+        height: 55rem;
+        padding-top: 3rem;
+    }
+    .alinear-equip{
+        
+    }
+    .madrid, .city, .barca, .bayern, .juve, .inter, .milan, .sevilla, .roma, .chelsea{
+        width: 110px;
+        height: 110px;
+    }
+    .nombres-equip{
+        font-size: 30px
+    }
+    .titulo-eq{
+        font-size: 60px;
+        
+    }
+
+    /*Partidos*/
+
+    .main-p, .p-ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #partidos-der{
+        margin-left: -0.01rem;
+    }
+    .cartas-equip{
+        
+    }
+    
+form{
+    font-size: 25px;
+    width: 30rem;
+    height: 30rem;
+ 
+}
+.input-formulario{
+    height: 4rem;
+}
+.boton{
+    font-size: 25px;
+  height: 4rem;
+}
+
+
+
+  
+
+
+
 
 }
