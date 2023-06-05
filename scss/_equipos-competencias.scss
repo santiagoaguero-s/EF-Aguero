@@ -1,0 +1,68 @@
+$border-cuadros: solid 5px rgb(248, 235, 215);
+$border-cajas: solid 3px rgb(248, 235, 215);
+/*Mixins*/
+
+@mixin sizes ($width, $height, $border-radius, $border) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    border: $border;
+}
+
+@mixin cuadros ($border, $border-radius) {
+    border: $border;
+    border-radius: $border-radius;
+}
+
+@mixin cajas ($border, $border-radius, $width) {
+    border: $border;
+    border-radius: $border-radius;
+    width: $width;
+}
+
+
+/*Equipos*/
+
+#equipos-izq,
+#equipos-der {
+    @include cuadros($border-cuadros, 4px, );
+    width: 80rem;
+    background: rgba(5, 7, 12, 0.5);
+    box-shadow: inset -1rem -1rem 57px 0.8rem #00B100;
+    grid-area: competiciones;
+    height: 40rem;
+}
+
+
+.alinear-equip {
+    @include cajas($border-cuadros, 3px, 68%)
+}
+
+.madrid,
+.city,
+.barca,
+.bayern,
+.juve,
+.inter,
+.milan,
+.sevilla,
+.roma,
+.chelsea {
+    @include sizes (90px, 90px, 90px, solid 4px #9A9285, )
+}
+
+/*Competencias*/
+
+.seriea-logo,
+.laliga-logo,
+.logo-champions,
+.premierlogo,
+.bundes-logo,
+.ligue1-logo,
+.logo-europa {
+    @extend .madrid
+}
+
+.alinear {
+    @include cajas($border-cajas, 3px, 60%);
+}

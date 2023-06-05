@@ -1,0 +1,80 @@
+/*body*/
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../images/cancha.webp);
+    background-position: center;
+    background-position: 0 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*Header*/
+
+header {
+    grid-area: header;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(44, 44, 52);
+    border-style: outset;
+    border-radius: 5px 5px 12px 12px;
+    border-color: rgb(248, 235, 215);
+    ;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+
+    #a-header,
+    .a-header {
+        font-family: 'Manrope', sans-serif;
+        text-decoration: none;
+        color: rgb(248, 235, 215)
+    }
+
+    .logo-pelota {
+        width: 7rem;
+        border-radius: 50px;
+        margin-top: -20%;
+    }
+
+    .formulario {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: -35%;
+        font-size: 50px;
+        color: rgb(248, 235, 215);
+    }
+
+}
+
+/*Footer*/
+
+footer {
+    grid-area: footer;
+    background-color: rgb(44, 44, 52);
+    border-style: outset;
+    border-radius: 10px 10px 5px 5px;
+    border-color: rgb(248, 235, 215);
+    ;
+    justify-content: center;
+    align-items: center;
+
+
+    .icono-footer {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px
+    }
+
+}
+
+.iconos{
+    color: rgb(248, 235, 215);
+    font-size: 30px;
+}
+
+

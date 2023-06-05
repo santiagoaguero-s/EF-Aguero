@@ -1,0 +1,115 @@
+/*Grillas*/
+
+
+/*grilla index*/
+
+#grilla {
+    display: grid;
+    row-gap: 35px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+        "header header header"
+        "izq parte1 der"
+        "footer footer footer";
+
+    #izq {
+        grid-area: izq;
+
+    }
+
+    #der {
+        grid-area: der;
+    }
+
+    #parte1 {
+        grid-area: parte1;
+    }
+
+    #parte2 {
+        margin-left: 0.625rem;
+    }
+
+    .slide {
+        margin-top: 20px;
+
+    }
+
+    .carousel {
+        max-width: 36rem;
+    }
+
+}
+
+/* Grilla Competiciones*/
+
+#grilla-competiciones {
+    display: grid;
+    row-gap: 40px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "competiciones competiciones competiciones"
+        "footer footer footer";
+
+    #competiciones {
+        grid-area: competiciones;
+        @include cuadros($border-cuadros, 4px);
+        background: rgba(5, 7, 12, 0.5);
+        box-shadow: inset -1rem -1rem 57px 0.8rem #00B100;
+        width: 90%;
+        margin-left: 20%;
+
+        .nombres-comp {
+            padding-left: 50px;
+        }
+
+    }
+
+    .titulo-comp {
+        margin-left: 20%;
+    }
+
+}
+
+/*Grilla Equipos*/
+
+#equipos-grilla{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "equipos-gral equipos-gral equipos-gral"
+    "footer footer footer";
+   #equipos-gral{
+    grid-template-areas: equipos-gral;
+    margin-left: 7%;
+   }
+   
+}
+.titulo-eq{
+    margin-left: 9%;
+   }
+
+/*Grilla Partidos*/
+
+#partidos-grilla{
+    display: grid;
+    grid-template-rows: 100px auto 65px;
+    grid-template-columns: auto 1fr auto ;
+    grid-template-areas: 
+    "header header header "
+    "partidos partidos partidos "
+    "footer footer footer ";
+    min-height: 100vh;
+    
+   
+  #partidos-der{
+    margin-left: 3rem;
+  }
+}    
+
+
+

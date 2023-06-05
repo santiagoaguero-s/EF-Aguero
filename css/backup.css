@@ -35,9 +35,6 @@ header{
     position: sticky;
     top: 0;
     z-index: 12;
-    
-      
-
 }
 
 
@@ -75,8 +72,6 @@ footer{
     width: 60px;
     height: 60px;
     border-radius: 60px
-    
-    
 }
 
 
@@ -115,9 +110,7 @@ iframe{
 
 .cards{
     width: 250px;
-    height: auto;
-    
-    
+    height: auto;   
 }
 
 .slide{
@@ -127,8 +120,7 @@ iframe{
   
    
 }
-.carousel{
-    
+.carousel{   
     max-width: 48rem;
 }
 .card-title{
@@ -157,16 +149,7 @@ iframe{
 li{
     list-style: none;
 }
-#competiciones{
-    grid-area: competiciones;
-    border: solid 5px rgb(248, 235, 215) ;
-    border-radius: 4px;
-    background:rgba(5, 7, 12, 0.5);
-    box-shadow: inset -1rem -1rem 57px 0.8rem  #00B100;
-    
-    
- 
-}
+
 .seriea-logo, .laliga-logo, .logo-champions, .premierlogo, .bundes-logo, .ligue1-logo{
     width: 90px;
     height: 90px;
@@ -300,16 +283,12 @@ li{
     height: 10rem;
     border: solid 3px rgb(248, 235, 215) ;
     border-radius: 4px;
-    background:rgba(5, 7, 12, 0.5);
-    
-    
-
+    background:rgba(5, 7, 12, 0.5); 
 }
+
 .imag-partidos{
    height: 9.6rem;
     width: 100%;
-   
-    
     
 }
 
@@ -358,7 +337,6 @@ form{
     background: rgba(5, 7, 12, 0.7);
     font-family: 'Manrope', sans-serif;
     color:  rgb(248, 235, 215);
-
 }
 .boton{
     background-color: #00B100;

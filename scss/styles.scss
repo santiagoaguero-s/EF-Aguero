@@ -1,5 +1,6 @@
-h1 { 
-    color: red
-    
-
-}
+@import "../scss/body-head-foot" ;
+@import "../scss/cards";
+@import "../scss/equipos-competencias";
+@import "../scss/formulario";
+@import "../scss/grid-areas";
+@import "../scss/medias-queries"
