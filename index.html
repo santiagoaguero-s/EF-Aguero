@@ -14,11 +14,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
- <!--Animate css-->
- <link
- rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+ <!--Aos css-->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 
@@ -33,7 +32,7 @@
           <a class="navbar-brand" href="./Index.html">
             <img src="./images/pelota.png" alt="" class="logo-pelota">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -62,7 +61,7 @@
     <!--carousel de iframes-->
 
     <main>
-    <h1 class="ms-2">Noticias</h1> 
+    <h1 class="ms-2" >Noticias</h1> 
       <section id="parte1" class="my-auto">
         <div class="container">
           <div class="row">
@@ -205,6 +204,9 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 
+    <script>
+      AOS.init();
+    </script> 
 
 </body>
 

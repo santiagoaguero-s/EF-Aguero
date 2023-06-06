@@ -35,7 +35,8 @@ $border-cajas: solid 3px rgb(248, 235, 215);
 
 
 .alinear-equip {
-    @include cajas($border-cuadros, 3px, 68%)
+    @include cajas($border-cuadros, 3px, 68%);
+    transition: all 0.9s;
 }
 
 .madrid,
@@ -65,4 +66,5 @@ $border-cajas: solid 3px rgb(248, 235, 215);
 
 .alinear {
     @include cajas($border-cajas, 3px, 60%);
+    transition: all 0.5s;
 }

@@ -42,6 +42,9 @@ header .formulario {
   font-size: 50px;
   color: rgb(248, 235, 215);
 }
+header .custom-toggler {
+  border: solid 1px rgb(248, 235, 215);
+}
 
 /*Footer*/
 footer {
@@ -85,6 +88,7 @@ li {
 .cards {
   width: 250px;
   height: auto;
+  transition: all 1s;
 }
 .cards .card-title {
   color: rgb(248, 235, 215);
@@ -139,6 +143,7 @@ li {
   border: solid 5px rgb(248, 235, 215);
   border-radius: 3px;
   width: 68%;
+  transition: all 0.9s;
 }
 
 .madrid, .seriea-logo,
@@ -168,6 +173,7 @@ li {
   border: solid 3px rgb(248, 235, 215);
   border-radius: 3px;
   width: 60%;
+  transition: all 0.5s;
 }
 
 /*Formularios*/
@@ -226,6 +232,15 @@ form .form-text {
   min-height: 100%;
   opacity: 0.4;
   z-index: -5;
+}
+
+/*Animaciones*/
+.cards:hover {
+  transform: scale(1.2);
+}
+
+.alinear:hover, .alinear-equip:hover {
+  transform: scale(1.1);
 }
 
 /*Grillas*/
@@ -307,6 +322,191 @@ form .form-text {
 }
 #partidos-grilla #partidos-der {
   margin-left: 3rem;
+}
+
+/*Medias Queries*/
+/*Medias Generales*/
+@media only screen and (max-width: 1400px) {
+  body {
+    background-image: linear-gradient(to right, #05470A, #1C5F21);
+  }
+}
+@media only screen and (max-width: 994px) {
+  .navbar {
+    position: relative;
+  }
+  .nav-link.ms-auto {
+    position: fixed;
+    top: 0;
+    right: 5.6rem;
+    margin-top: 2.5rem;
+  }
+  .nav-link.ms-auto.index {
+    position: fixed;
+    top: 0;
+    right: 6rem;
+    margin-top: 2.5rem;
+  }
+  .navbar-nav {
+    background-color: rgba(5, 7, 12, 0.5);
+    width: 20rem;
+    padding-left: 1rem;
+  }
+}
+/*Mobile*/
+@media only screen and (max-width: 700px) {
+  /*Competiciones*/
+  #competiciones {
+    margin-left: -4rem;
+  }
+  #competiciones .alinear {
+    width: 16rem;
+  }
+  /*Equipos*/
+  .cont-equipos,
+  .d-ul,
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-equipos #equipos-izq,
+  .d-ul #equipos-izq,
+  .flex-column #equipos-izq {
+    width: 20rem;
+  }
+  .cont-equipos #equipos-der,
+  .d-ul #equipos-der,
+  .flex-column #equipos-der {
+    width: 20rem;
+    margin-top: 1rem;
+    display: flex;
+    position: relative;
+    right: 2.9rem;
+  }
+  /*Partidos*/
+  .main-p,
+  .p-ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-p #partidos-der,
+  .p-ul #partidos-der {
+    margin-right: 3rem;
+  }
+  .main-p .cartas-equip,
+  .p-ul .cartas-equip {
+    width: 18rem;
+    height: auto;
+    border: solid 3px rgb(248, 235, 215);
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /*Competiciones*/
+  #competiciones {
+    margin-left: -4rem;
+  }
+  #competiciones .alinear {
+    width: 20rem;
+  }
+  /*Equipos*/
+  .cont-equipos,
+  .d-ul,
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-equipos #equipos-izq,
+  .d-ul #equipos-izq,
+  .flex-column #equipos-izq {
+    width: 30rem;
+  }
+  .cont-equipos #equipos-der,
+  .d-ul #equipos-der,
+  .flex-column #equipos-der {
+    width: 30rem;
+    margin-top: 1rem;
+    display: flex;
+    position: relative;
+    right: 2.9rem;
+  }
+  .main-p,
+  .p-ul {
+    display: flex;
+  }
+  .main-p #partidos-der,
+  .p-ul #partidos-der {
+    margin-right: 3rem;
+    padding-top: 4rem;
+  }
+  .main-p #partidos-izq,
+  .p-ul #partidos-izq {
+    padding-top: 4rem;
+  }
+  .main-p .cartas-equip,
+  .p-ul .cartas-equip {
+    width: 16rem;
+    height: 20rem;
+    border: solid 3px rgb(248, 235, 215);
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  /*Competencias*/
+  .alinear {
+    width: 25rem;
+  }
+  /*Equipos*/
+  .footer-e {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  /*Partidos*/
+  .main-p,
+  .p-ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-p #partidos-der,
+  .p-ul #partidos-der {
+    display: flex;
+    left: 10rem;
+    padding-top: 1rem;
+  }
+  .main-p #partidos-izq,
+  .p-ul #partidos-izq {
+    padding-top: 2rem;
+    padding-left: 3rem;
+  }
+  .main-p .cartas-equip,
+  .p-ul .cartas-equip {
+    width: 38rem;
+    height: 10rem;
+    border: solid 3px rgb(248, 235, 215);
+  }
+}
+/*Media especifica para partidos*/
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .main-p,
+  .p-ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-p #partidos-der,
+  .p-ul #partidos-der {
+    display: flex;
+    left: 10rem;
+    padding-top: 1rem;
+  }
+  .main-p #partidos-izq,
+  .p-ul #partidos-izq {
+    padding-top: 2rem;
+  }
+  .main-p .cartas-equip,
+  .p-ul .cartas-equip {
+    width: 38rem;
+    height: 10rem;
+    border: solid 3px rgb(248, 235, 215);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
