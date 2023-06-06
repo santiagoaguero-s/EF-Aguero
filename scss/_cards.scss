@@ -30,13 +30,18 @@
         width: 100%;
 
     }
+    .card-title{
+        font-family: 'Manrope', sans-serif;
+    color:  rgb(248, 235, 215);  
+    }
+    .card-footer{
+        border-top: solid 1px rgb(248, 235, 215);
+        
+    }
 }
 
 /*Cards formulario*/
 
-.card-footer{
-    border-top: solid 1px rgb(248, 235, 215);
-}
 .card-text{
     font-family: 'Manrope', sans-serif;
     text-decoration: none;
