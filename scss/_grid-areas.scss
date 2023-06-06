@@ -55,7 +55,7 @@
 
     #competiciones {
         grid-area: competiciones;
-        @include cuadros($border-cuadros, 4px);
+        @include cuadros ($border-cuadros, 4px);
         background: rgba(5, 7, 12, 0.5);
         box-shadow: inset -1rem -1rem 57px 0.8rem #00B100;
         width: 90%;
@@ -83,15 +83,21 @@
     "header header header"
     "equipos-gral equipos-gral equipos-gral"
     "footer footer footer";
+    min-height: 100vh;
    #equipos-gral{
     grid-template-areas: equipos-gral;
     margin-left: 7%;
    }
    
+   
+  
 }
+
 .titulo-eq{
     margin-left: 9%;
    }
+
+  
 
 /*Grilla Partidos*/
 
@@ -109,6 +115,7 @@
   #partidos-der{
     margin-left: 3rem;
   }
+  
 }    
 
 
