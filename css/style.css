@@ -137,6 +137,7 @@ li {
   box-shadow: inset -1rem -1rem 57px 0.8rem #00B100;
   grid-area: competiciones;
   height: 40rem;
+  padding-bottom: 5rem;
 }
 
 .alinear-equip {
@@ -306,6 +307,7 @@ form .form-text {
 #equipos-grilla #equipos-gral {
   grid-template-areas: equipos-gral;
   margin-left: 7%;
+  margin-bottom: 5rem;
 }
 
 .titulo-eq {
